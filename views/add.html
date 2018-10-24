@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+     <link href="/public/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+          <form class="navbar-form navbar-right">
+            <input type="text" class="form-control" placeholder="Search...">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-left: 150px">
+      <div class="row">
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Dashboard</h1>
+          <h2 class="sub-header">添加学生信息</h2>
+          <div style="margin-bottom:5px">
+               <a class="btn btn-danger" href="javascript:history.back();">返回主页</a>
+          </div>
+              <form action="/student/add" method="post">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">姓名:</label>
+                    <input name="name" type="text" class="form-control" id="exampleInputEmail1">
+                  </div>
+                 <div class="form-group">
+                    <label for="exampleInputPassword1">年龄:</label>
+                    <select name="age" class="form-control">
+                        <option value="20">20</option>
+                        <option value="19">19</option>
+                        <option value="19">23</option>
+                        <option value="19">21</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">班级:</label>
+                    <select name="class"  class="form-control">
+                        <option value="165">165</option>
+                        <option value="168">168</option>
+                        <option value="169">169</option>
+                        <option value="217">217</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">学号:</label>
+                    <input name="studyNum" type="text" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <button type="submit" class="btn btn-success">确认提交</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
