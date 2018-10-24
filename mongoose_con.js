@@ -1,4 +1,3 @@
-
 var mongoose = require('mongoose'),
     DB_URL = 'mongodb://localhost/student';
 
